@@ -1,0 +1,26 @@
+USE [TrainDB122484]
+GO
+
+/****** Object:  Table [dbo].[Employee]    Script Date: 2023/12/11 上午 10:42:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Employee](
+	[EmpNo] [varchar](10) NOT NULL,
+	[EmpName] [varchar](10) NULL,
+	[Sex] [varchar](2) NULL,
+	[DeptNo] [varchar](10) NOT NULL,
+	[Birth] [varchar](8) NULL,
+	[Salary] [int] NULL,
+ CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED 
+(
+	[EmpNo] ASC,
+	[DeptNo] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

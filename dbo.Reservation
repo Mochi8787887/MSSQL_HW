@@ -1,0 +1,24 @@
+USE [TrainDB122484]
+GO
+
+/****** Object:  Table [dbo].[Reservation]    Script Date: 2023/12/11 上午 10:44:03 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Reservation](
+	[ReservationID] [int] IDENTITY(1,1) NOT NULL,
+	[EmpNo] [varchar](10) NULL,
+	[AbsDate] [date] NULL,
+	[StartTime] [datetime] NULL,
+	[EndTime] [datetime] NULL,
+PRIMARY KEY CLUSTERED 
+(
+	[ReservationID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
